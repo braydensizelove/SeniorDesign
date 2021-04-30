@@ -2,8 +2,8 @@
 #include "DoorControls.h"
 
 int fixedCode = 256;
-// Replace with your network credentials
-const char* ssid = "EE162-2.4-g";
+// network credentials
+const char* ssid = "";
 const char* password = "";
 
 // Set LED GPIO
@@ -53,18 +53,6 @@ function myFunction() {
 
 // Replaces placeholder with LED state value
 String processor(const String& var){
-  Serial.println(var);
-  if(var == "STATE"){
-    if(digitalRead(ledPin)){
-      ledState = "ON";
-    }
-    else{
-      ledState = "OFF";
-    }
-    Serial.print(ledState);
-    return ledState;
-  }
-  return String();
 }
 
 String doorCode(const String& var) {
