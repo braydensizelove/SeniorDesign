@@ -11,7 +11,6 @@
 void IRAM_ATTR detectsMovement();
 void start_capture();
 void camCapture(ArduCAM myCAM);
-void serverCapture();
 void serverStream();
 void handleNotFound();
 void serverHome();
